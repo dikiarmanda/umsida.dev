@@ -5,7 +5,7 @@ export default function Hero() {
         <div>
           <img
             src="/src/assets/umsidadev.png"
-            className="max-w-sm rounded-lg shadow-2xl"
+            className="max-w-sm mask mask-hexagon shadow-2xl"
           />
         </div>
         <div className="lg:text-start">
