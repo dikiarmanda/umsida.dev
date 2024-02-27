@@ -24,18 +24,15 @@ export default function Navbar() {
             className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
           >
             <li>
-              <a>About</a>
+              <a href="#about">About</a>
             </li>
             <li>
-              <a>Event</a>
-              <ul className="p-2">
+              <a href="/Event">Event</a>
+              {/* <ul className="p-2">
                 <li>
-                  <a>Submenu 1</a>
+                  <a>2024</a>
                 </li>
-                <li>
-                  <a>Submenu 2</a>
-                </li>
-              </ul>
+              </ul> */}
             </li>
             <li>
               <a>Contact</a>
@@ -49,20 +46,18 @@ export default function Navbar() {
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
           <li>
-            <a>About</a>
+            <a href="#about">About</a>
           </li>
           <li>
-            <details>
+            <a href="/Event">Event</a>
+            {/* <details>
               <summary>Event</summary>
               <ul className="p-2">
                 <li>
                   <a>Submenu 1</a>
                 </li>
-                <li>
-                  <a>Submenu 2</a>
-                </li>
               </ul>
-            </details>
+            </details> */}
           </li>
           <li>
             <a>Contact</a>
