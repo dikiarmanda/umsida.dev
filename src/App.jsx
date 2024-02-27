@@ -11,7 +11,7 @@ export default function App() {
   }, []);
 
   return (
-    <div className="container">
+    <div className="container lg:max-w-7xl mx-auto">
       <Navbar />
       <Hero />
       <About />
