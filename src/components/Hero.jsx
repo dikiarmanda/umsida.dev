@@ -1,6 +1,6 @@
 export default function Hero() {
   return (
-    <div className="hero h-screen bg-base-200" id="hero">
+    <div className="hero h-screen text-center bg-base-200" id="hero">
       <div className="hero-content flex-col w-full lg:justify-around lg:flex-row-reverse">
         <div>
           <img

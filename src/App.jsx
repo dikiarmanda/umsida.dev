@@ -1,8 +1,9 @@
 import { useEffect } from "react";
-import "./App.css";
 import { themeChange } from "theme-change";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
+import About from "./components/About";
+import Footer from "./components/Footer";
 
 export default function App() {
   useEffect(() => {
@@ -10,9 +11,11 @@ export default function App() {
   }, []);
 
   return (
-    <>
+    <div className="container">
       <Navbar />
       <Hero />
-    </>
+      <About />
+      <Footer />
+    </div>
   );
 }
