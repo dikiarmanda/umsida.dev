@@ -1,10 +1,12 @@
+import umsidadev from "../assets/umsidadev.png";
+
 export default function Hero() {
   return (
     <div className="hero h-screen text-center bg-base-200" id="hero">
       <div className="hero-content flex-col w-full lg:justify-around lg:flex-row-reverse">
         <div>
           <img
-            src="/src/assets/umsidadev.png"
+            src={umsidadev}
             className="max-w-sm mask mask-hexagon shadow-2xl"
           />
         </div>

@@ -1,6 +1,6 @@
 export default function About() {
   return (
-    <div className="flex flex-col p-10 justify-center lg:flex-row lg:items-center">
+    <div className="flex flex-col p-10 justify-center lg:flex-row lg:items-center" id="about">
       <div className="lg:w-1/2 lg:pe-7">
         <h1 className="text-3xl font-bold">Apa itu UMSIDA.dev?</h1>
         <p className="mt-5">
