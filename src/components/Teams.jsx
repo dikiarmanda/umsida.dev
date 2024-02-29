@@ -17,14 +17,14 @@ export default function Teams() {
       nama: "Bagus Dwi Kurniawan",
       passion: "Cyber Security",
       role: "Lecturer",
-      ig: "satukode.id",
+      ig: "satukode.id", // TODO: konfirmasi ke mas bagus
       github: "bagusdwik",
       perform: 1,
       foto: "bagus.jpg",
     },
     {
       id: 3,
-      nama: "Firdausqi Salsabila",
+      nama: "Firdausi Usqi Salsabila",
       passion: "UI/UX Designer",
       role: "Lecturer",
       ig: "usqiiii",
@@ -38,7 +38,7 @@ export default function Teams() {
       passion: "Mobile Developer",
       role: "Lecturer",
       ig: "arjunaadlina",
-      github: "dikiarmanda",
+      github: "",
       perform: 2,
       foto: "arjuna.jpg",
     },
@@ -46,20 +46,13 @@ export default function Teams() {
 
   return (
     <div className="text-center">
-      <h2 className="font-bold text-3xl block">Meet with Our Teams</h2>
-      <div className="flex">
-        <div className="lg:flex-initial lg:w-1/4 lg:mx-10">
-          <Team member={ourTeams[0]} />
-        </div>
-        <div className="lg:flex-initial lg:w-1/4 lg:mx-10">
-          <Team member={ourTeams[1]} />
-        </div>
-        <div className="lg:flex-initial lg:w-1/4 lg:mx-10">
-          <Team member={ourTeams[2]} />
-        </div>
-        <div className="lg:flex-initial lg:w-1/4 lg:mx-10">
-          <Team member={ourTeams[3]} />
-        </div>
+      <h2 className="font-bold text-3xl">Meet with Our Teams</h2>
+      <div className="flex flex-wrap justify-center">
+        {ourTeams.map((teamMember, index) => (
+          <div key={index} className="mx-24 flex-1 lg:w-1/4 lg:mx-10">
+            <Team member={teamMember} />
+          </div>
+        ))}
       </div>
     </div>
   );
