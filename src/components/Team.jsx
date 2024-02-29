@@ -1,17 +1,18 @@
-export default function Team() {
+export default function Team(props) {
+  const member = props.member;
   return (
-    <div className="card w-96 bg-base-100 shadow-xl">
+    <div className="card base-neutral shadow-xl my-10">
       <figure>
-        <img
-          src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-          alt="Shoes"
-        />
+        <img src={"/src/assets/teams/" + member.foto} />
       </figure>
       <div className="card-body">
-        <h2 className="card-title">Shoes!</h2>
-        <p>If a dog chews shoes whose shoes does he choose?</p>
+        <h2 className="font-semibold text-2xl">{member.nama}</h2>
+        <hr />
+        <p className="text-secondary">{member.passion}</p>
+        <p>{member.role}</p>
         <div className="card-actions justify-end">
-          <button className="btn btn-primary">Buy Now</button>
+          <button className="btn btn-primary"><FontAwesomeIcon icon="fa-brands fa-instagram" /></button>
+          <button className="btn btn-primary"><FontAwesomeIcon icon="fa-brands fa-github" /></button>
         </div>
       </div>
     </div>

@@ -2,7 +2,7 @@ export default function About() {
   return (
     <div className="flex flex-col p-10 justify-center lg:flex-row lg:items-center" id="about">
       <div className="lg:w-1/2 lg:pe-7">
-        <h1 className="text-3xl font-bold">Apa itu UMSIDA.dev?</h1>
+        <h1 className="font-bold text-3xl">Apa itu UMSIDA.dev?</h1>
         <p className="mt-5">
           UMSIDA.dev adalah komunitas terbuka bagi semua yang tertarik pada
           dunia informasi dan teknologi. Fokusnya adalah pembelajaran dan

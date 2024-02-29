@@ -1,4 +1,4 @@
-import umsidadev from "../assets/umsidadev.png";
+import umsidadev from "../assets/umsidadev.png"
 
 export default function Hero() {
   return (
