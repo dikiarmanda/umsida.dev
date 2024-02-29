@@ -1,4 +1,8 @@
+// import { useState } from "react";
+
 export default function Navbar() {
+  // const [darkMode, setDarkMode] = useState(false);
+
   return (
     <div className="navbar fixed top-0 start-0 bg-base-100 lg:px-10 z-50">
       <div className="navbar-start">
