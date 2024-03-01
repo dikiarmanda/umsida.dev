@@ -20,7 +20,7 @@ export default function Team(props) {
   return (
     <div className="card max-w-96 base-neutral shadow-xl my-10 mx-auto">
       <figure>
-        <img src={"/src/assets/teams/" + member.foto} />
+        <img src={"/public/img/teams/" + member.foto} />
       </figure>
       <div className="card-body gap-0">
         <h2 className="font-semibold text-2xl">{member.nama}</h2>
