@@ -71,7 +71,7 @@ export default function Team(props) {
               </div>
               <div className="stat-title">Sharing Time</div>
               <div className="stat-value text-secondary">
-                {member.perform * 3} hours
+                {member.perform * 3} h
               </div>
               <div className="stat-desc"></div>
             </div>
