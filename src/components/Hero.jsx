@@ -3,7 +3,7 @@ export default function Hero() {
     <div className="hero h-screen text-center bg-base-200" id="hero">
       <div className="hero-content flex-col w-full lg:justify-around lg:flex-row-reverse">
         <div>
-          <img src="/public/img/umsidadev.png" className="max-w-sm mask mask-hexagon shadow-2xl" />
+          <img src="/img/umsidadev.png" className="max-w-sm mask mask-hexagon shadow-2xl" />
         </div>
         <div className="lg:text-start">
           <h1 className="text-5xl font-bold">UMSIDA.dev</h1>
