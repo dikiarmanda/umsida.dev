@@ -12,8 +12,8 @@ export default function Hero() {
         </div>
         <div className="lg:text-start">
           <h1 className="text-5xl font-bold">UMSIDA.dev</h1>
-          <p className="py-6">Belajar pemrograman mudah bukan. Bukan!</p>
-          <button className="btn btn-primary">Join Now</button>
+          <p className="py-6">Berbagi ilmu akan membuatmu semakin ahli dalam bidangmu.</p>
+          <button className="btn btn-secondary">Join Now</button>
         </div>
       </div>
     </div>

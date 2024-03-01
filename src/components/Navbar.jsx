@@ -1,4 +1,8 @@
+// import { useState } from "react";
+
 export default function Navbar() {
+  // const [darkMode, setDarkMode] = useState(false);
+
   return (
     <div className="navbar fixed top-0 start-0 bg-base-100 lg:px-10 z-50">
       <div className="navbar-start">
@@ -35,7 +39,10 @@ export default function Navbar() {
               </ul> */}
             </li>
             <li>
-              <a>Contact</a>
+              <a href="#teams">Teams</a>
+            </li>
+            <li>
+              <a href="#contact">Contact</a>
             </li>
           </ul>
         </div>
@@ -60,7 +67,10 @@ export default function Navbar() {
             </details> */}
           </li>
           <li>
-            <a>Contact</a>
+            <a href="#teams">Teams</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
           </li>
         </ul>
       </div>
