@@ -39,7 +39,10 @@ export default function Navbar() {
               </ul> */}
             </li>
             <li>
-              <a>Contact</a>
+              <a href="#teams">Teams</a>
+            </li>
+            <li>
+              <a href="#contact">Contact</a>
             </li>
           </ul>
         </div>
@@ -64,7 +67,10 @@ export default function Navbar() {
             </details> */}
           </li>
           <li>
-            <a>Contact</a>
+            <a href="#teams">Teams</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
           </li>
         </ul>
       </div>

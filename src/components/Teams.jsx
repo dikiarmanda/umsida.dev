@@ -45,7 +45,7 @@ export default function Teams() {
   ];
 
   return (
-    <div className="text-center">
+    <div className="text-center" id="teams">
       <h2 className="font-bold text-3xl">Meet with Our Teams</h2>
       <div className="flex flex-wrap justify-center">
         {ourTeams.map((teamMember, index) => (
