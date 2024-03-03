@@ -32,11 +32,14 @@ export default function Navbar() {
             </li>
             <li>
               <a href="/Event">Event</a>
-              {/* <ul className="p-2">
+              <ul className="p-2">
                 <li>
-                  <a>2024</a>
+                  <a href="/Event">NGOBAR</a>
                 </li>
-              </ul> */}
+                <li>
+                  <a href="/Event">NGEBAR</a>
+                </li>
+              </ul>
             </li>
             <li>
               <a href="#teams">Teams</a>
@@ -56,15 +59,17 @@ export default function Navbar() {
             <a href="#about">About</a>
           </li>
           <li>
-            <a href="/Event">Event</a>
-            {/* <details>
+            <details>
               <summary>Event</summary>
               <ul className="p-2">
                 <li>
-                  <a>Submenu 1</a>
+                  <a href="/Event">NGOBAR</a>
+                </li>
+                <li>
+                  <a href="/Event">NGEBAR</a>
                 </li>
               </ul>
-            </details> */}
+            </details>
           </li>
           <li>
             <a href="#teams">Teams</a>
