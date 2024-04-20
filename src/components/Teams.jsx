@@ -17,7 +17,7 @@ export default function Teams() {
       nama: "Bagus Dwi Kurniawan",
       passion: "Cyber Security",
       role: "Lecturer",
-      ig: "satukode.id",
+      ig: "bagusdkrn",
       github: "bagusdwik",
       perform: 1,
       foto: "bagus.jpg",

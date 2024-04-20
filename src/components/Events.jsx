@@ -93,6 +93,15 @@ export default function Events() {
       kategori: "NGOBAR",
       poster: "ngobar8.0.jpg",
     },
+    {
+      id: 11,
+      title: "NGOBARBURITv1.0",
+      subTitle: "PHP Object Oriented Programming",
+      tgl: "17 Maret 2024",
+      pemateri: 1,
+      kategori: "NGOBARBURIT",
+      poster: "ngobarburit1.0.jpg",
+    },
   ];
 
   return (
