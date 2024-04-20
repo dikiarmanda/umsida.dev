@@ -18,7 +18,7 @@ export default function Team(props) {
   };
 
   return (
-    <div className="card max-w-96 base-neutral shadow-xl my-10 mx-auto">
+    <div className="card max-w-96 min-h-96 base-neutral shadow-xl my-10 mx-auto">
       <figure>
         <img src={"/img/teams/" + member.foto} />
       </figure>
@@ -71,17 +71,15 @@ export default function Team(props) {
               </div>
               <div className="stat-title">Sharing Time</div>
               <div className="stat-value text-secondary">
-                {member.perform * 3} hours
+                {member.perform * 3} h
               </div>
               <div className="stat-desc"></div>
             </div>
           </div>
-          <div className="modal-action">
-            <form method="dialog">
-              <button className="btn">Close</button>
-            </form>
-          </div>
         </div>
+        <form method="dialog" className="modal-backdrop">
+          <button>close</button>
+        </form>
       </dialog>
     </div>
   );

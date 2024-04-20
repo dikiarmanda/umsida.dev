@@ -10,7 +10,7 @@ export default function Hero() {
           <p className="py-6">
             Berbagi ilmu akan membuatmu semakin ahli dalam bidangmu.
           </p>
-          <button className="btn btn-secondary">Join Now</button>
+          <a href="https://tally.so/r/wvAoXd" className="btn btn-secondary">Join Now</a>
         </div>
       </div>
     </div>

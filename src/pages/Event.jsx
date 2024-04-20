@@ -5,6 +5,7 @@ export default function Event() {
   return (
     <>
       <Navbar />
+      
       <Footer />
     </>
   );

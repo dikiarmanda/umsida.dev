@@ -1,8 +1,22 @@
 // import { useState } from "react";
+// import { useEffect } from "react";
+// import { themeChange } from "theme-change";
 
 export default function Navbar() {
-  // const [darkMode, setDarkMode] = useState(false);
+  // const [theme, setTheme] = useState("dark");
 
+  // const themeController = document.querySelector(".theme-controller");
+  // themeController.addEventListener("change", (e) => {
+  //   if (e.target.checked) {
+  //     setTheme("light");
+  //   } else {
+  //     setTheme("dark");
+  //   }
+  // });
+
+  // useEffect(() => {
+  //   themeChange(false);
+  // }, []);
   return (
     <div className="navbar fixed top-0 start-0 bg-base-100 lg:px-10 z-50">
       <div className="navbar-start">
@@ -32,11 +46,14 @@ export default function Navbar() {
             </li>
             <li>
               <a href="/Event">Event</a>
-              {/* <ul className="p-2">
+              <ul className="p-2">
                 <li>
-                  <a>2024</a>
+                  <a href="/Event">NGOBAR</a>
                 </li>
-              </ul> */}
+                <li>
+                  <a href="/Event">NGEBAR</a>
+                </li>
+              </ul>
             </li>
             <li>
               <a href="#teams">Teams</a>
@@ -56,15 +73,17 @@ export default function Navbar() {
             <a href="#about">About</a>
           </li>
           <li>
-            <a href="/Event">Event</a>
-            {/* <details>
+            <details>
               <summary>Event</summary>
               <ul className="p-2">
                 <li>
-                  <a>Submenu 1</a>
+                  <a href="/Event">NGOBAR</a>
+                </li>
+                <li>
+                  <a href="/Event">NGEBAR</a>
                 </li>
               </ul>
-            </details> */}
+            </details>
           </li>
           <li>
             <a href="#teams">Teams</a>
@@ -76,11 +95,11 @@ export default function Navbar() {
       </div>
       <div className="navbar-end">
         <label className="swap swap-rotate">
-          {/* this hidden checkbox controls the state */}
           <input
             type="checkbox"
             className="theme-controller"
             value="synthwave"
+            // checked={theme === "light"}
           />
 
           {/* sun icon */}
