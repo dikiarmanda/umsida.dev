@@ -1,22 +1,5 @@
-// import { useState } from "react";
-// import { useEffect } from "react";
-// import { themeChange } from "theme-change";
-
 export default function Navbar() {
-  // const [theme, setTheme] = useState("dark");
-
-  // const themeController = document.querySelector(".theme-controller");
-  // themeController.addEventListener("change", (e) => {
-  //   if (e.target.checked) {
-  //     setTheme("light");
-  //   } else {
-  //     setTheme("dark");
-  //   }
-  // });
-
-  // useEffect(() => {
-  //   themeChange(false);
-  // }, []);
+  
   return (
     <div className="navbar fixed top-0 start-0 bg-base-100 lg:px-10 z-50">
       <div className="navbar-start">
@@ -99,7 +82,6 @@ export default function Navbar() {
             type="checkbox"
             className="theme-controller"
             value="synthwave"
-            // checked={theme === "light"}
           />
 
           {/* sun icon */}
