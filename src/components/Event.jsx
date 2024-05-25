@@ -11,7 +11,7 @@ export default function Event(props) {
   };
 
   return (
-    <div className="card max-w-96 text-start shadow-xl my-10 mx-auto glass">
+    <div className="card max-w-96 text-start shadow-xl my-10 mx-auto">
       <figure>
         <img src={"/img/events/" + workshop.poster} />
       </figure>

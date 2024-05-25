@@ -13,6 +13,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/event" element={<Event />} />
+        <Route path="/tips-skripsi" element={<Event />} />
       </Routes>
     </Router>
   );
