@@ -35,6 +35,26 @@ export default function RoadmapSkripsi() {
         '[CETAK] Dokumen Bimbingan',
       ],
     },
+    {
+      title: 'Yudisium',
+      body: [
+        'Mengumpulkan berkas ke classroom',
+        '[SAPUJAGAD] Upload tanda terima pengumpulan classroom',
+        '[SAPUJAGAD] Validasi sudah upload Archive',
+        '[SAPUJAGAD] Validasi keuangan ke Direktorat Keuangan',
+        'Bayar yudisium Rp. 75.000 ke admin saintek',
+      ],
+    },
+    {
+      title: 'Wisuda',
+      body: [
+        'Aktivasi VA ke BAK untuk pembayaran wisuda',
+        '[U-PAY] Bayar biaya wisuda',
+        '[SAPUJAGAD] Isi formulir pendaftaran wisuda',
+        '[CETAK] Formulir pendaftaran wisuda',
+        '[CETAK] Foto 3x4 2 lembar',
+      ],
+    }
   ]
   return (
     <div className="container mx-auto lg:max-w-7xl">
