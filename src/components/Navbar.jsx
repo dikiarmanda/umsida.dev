@@ -24,7 +24,7 @@ export default function Navbar() {
             className="menu dropdown-content menu-sm z-[1] mt-3 w-52 rounded-box bg-base-100 p-2 shadow"
           >
             <li>
-              <a href="#about">About</a>
+              <a href="/#about">About</a>
             </li>
             <li>
               <a href="/roadmap-skripsi">Roadmap Skripsi</a>
@@ -41,10 +41,10 @@ export default function Navbar() {
               </ul>
             </li>
             <li>
-              <a href="#teams">Teams</a>
+              <a href="/#teams">Teams</a>
             </li>
             <li>
-              <a href="#contact">Contact</a>
+              <a href="/#contact">Contact</a>
             </li>
           </ul>
         </div>
@@ -55,7 +55,7 @@ export default function Navbar() {
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
           <li>
-            <a href="#about">About</a>
+            <a href="/#about">About</a>
           </li>
           <li>
             <a href="/roadmap-skripsi">Roadmap Skripsi</a>
@@ -74,10 +74,10 @@ export default function Navbar() {
             </details>
           </li>
           <li>
-            <a href="#teams">Teams</a>
+            <a href="/#teams">Teams</a>
           </li>
           <li>
-            <a href="#contact">Contact</a>
+            <a href="/#contact">Contact</a>
           </li>
         </ul>
       </div>
