@@ -1,7 +1,6 @@
 export default function Navbar() {
-  
   return (
-    <div className="navbar fixed top-0 start-0 bg-base-100 lg:px-10 z-50">
+    <div className="navbar fixed start-0 top-0 z-50 bg-base-100 lg:px-10">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -22,10 +21,13 @@ export default function Navbar() {
           </div>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+            className="menu dropdown-content menu-sm z-[1] mt-3 w-52 rounded-box bg-base-100 p-2 shadow"
           >
             <li>
               <a href="#about">About</a>
+            </li>
+            <li>
+              <a href="/roadmap-skripsi">Roadmap Skripsi</a>
             </li>
             <li>
               <a href="/Event">Event</a>
@@ -54,6 +56,9 @@ export default function Navbar() {
         <ul className="menu menu-horizontal px-1">
           <li>
             <a href="#about">About</a>
+          </li>
+          <li>
+            <a href="/roadmap-skripsi">Roadmap Skripsi</a>
           </li>
           <li>
             <details>
@@ -86,7 +91,7 @@ export default function Navbar() {
 
           {/* sun icon */}
           <svg
-            className="swap-on fill-current w-10 h-10"
+            className="swap-on h-10 w-10 fill-current"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
           >
@@ -95,7 +100,7 @@ export default function Navbar() {
 
           {/* moon icon */}
           <svg
-            className="swap-off fill-current w-10 h-10"
+            className="swap-off h-10 w-10 fill-current"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
           >
@@ -104,5 +109,5 @@ export default function Navbar() {
         </label>
       </div>
     </div>
-  );
+  )
 }
