@@ -1,9 +1,9 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Home from "./pages/Home";
-import Event from "./pages/Event";
-import RoadmapSkripsi from "./pages/RoadmapSkripsi";
+import Home from "./container/Home";
+import Event from "./container/Event";
+import RoadmapSkripsi from "./container/RoadmapSkripsi";
 
-export default function App() {
+export default function App () {
   return (
     <Router>
       <Routes>

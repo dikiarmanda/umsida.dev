@@ -1,9 +1,11 @@
-export default function Hero() {
+import logo from "./../assets/images/umsidadev.png"
+
+const Hero = () => {
   return (
     <div className="hero h-screen text-center bg-base-200" id="hero">
       <div className="hero-content flex-col w-full lg:justify-around lg:flex-row-reverse">
         <div>
-          <img src="/img/umsidadev.png" className="max-w-sm mask mask-hexagon shadow-2xl" />
+          <img src={logo} className="max-w-sm mask mask-hexagon shadow-2xl" />
         </div>
         <div className="lg:text-start">
           <h1 className="text-5xl font-bold">UMSIDA.dev</h1>
@@ -14,5 +16,7 @@ export default function Hero() {
         </div>
       </div>
     </div>
-  );
+  )
 }
+
+export default Hero

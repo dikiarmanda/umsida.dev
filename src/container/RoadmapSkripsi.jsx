@@ -1,9 +1,9 @@
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
-// import TimelineHorizontal from '../components/TimelineHorizontal'
 import Acordion from '../components/Acordion'
+// import TimelineHorizontal from '../components/TimelineHorizontal'
 
-export default function RoadmapSkripsi() {
+const RoadmapSkripsi = () => {
   const roadmap = [
     {
       title: 'Proposal',
@@ -75,3 +75,5 @@ export default function RoadmapSkripsi() {
     </div>
   )
 }
+
+export default RoadmapSkripsi
