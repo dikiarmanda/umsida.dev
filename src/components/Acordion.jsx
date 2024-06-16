@@ -1,4 +1,4 @@
-export default function Acordion({ step, body }) {
+const Acordion = ({ step, body }) => {
   return (
     <div className="join join-vertical w-2/3 mx-auto mb-5">
       <div className="collapse join-item collapse-arrow border border-base-300">
@@ -18,3 +18,5 @@ export default function Acordion({ step, body }) {
     </div>
   )
 }
+
+export default Acordion

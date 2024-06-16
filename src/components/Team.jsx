@@ -1,26 +1,21 @@
-import { useRef } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faClock } from "@fortawesome/free-regular-svg-icons";
-import {
-  faChartSimple,
-  faChalkboardUser,
-} from "@fortawesome/free-solid-svg-icons";
-import { faInstagram, faGithub } from "@fortawesome/free-brands-svg-icons";
+import { useRef } from "react"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faClock } from "@fortawesome/free-regular-svg-icons"
+import { faChartSimple, faChalkboardUser, } from "@fortawesome/free-solid-svg-icons"
+import { faInstagram, faGithub } from "@fortawesome/free-brands-svg-icons"
 
-export default function Team(props) {
-  const member = props.member;
-
-  const statModalRef = useRef(null);
+const Team = ({ member }) => {
+  const statModalRef = useRef(null)
   const openModal = () => {
     if (statModalRef.current) {
-      statModalRef.current.showModal();
+      statModalRef.current.showModal()
     }
-  };
+  }
 
   return (
-    <div className="card max-w-96 min-h-96 base-neutral shadow-xl my-10 mx-auto">
+    <div className="card max-w-96 h-[490px] base-neutral shadow-xl my-10 mx-auto">
       <figure>
-        <img src={"/img/teams/" + member.foto} />
+        <img src={member.foto} />
       </figure>
       <div className="card-body gap-0">
         <h2 className="font-semibold text-2xl">{member.nama}</h2>
@@ -31,20 +26,15 @@ export default function Team(props) {
           <button className="btn btn-secondary text-lg" onClick={openModal}>
             <FontAwesomeIcon icon={faChartSimple} />
           </button>
-          <a
-            href={"https://www.instagram.com/" + member.ig}
-            className="btn btn-secondary text-lg"
-          >
+          <a href={"https://www.instagram.com/" + member.ig} className="btn btn-secondary text-lg">
             <FontAwesomeIcon icon={faInstagram} />
           </a>
-          <a
-            href={"https://github.com/" + member.github}
-            className="btn btn-secondary text-lg"
-          >
+          <a href={"https://github.com/" + member.github} className="btn btn-secondary text-lg">
             <FontAwesomeIcon icon={faGithub} />
           </a>
         </div>
       </div>
+
       {/* stat modal */}
       <dialog id="statModal" className="modal" ref={statModalRef}>
         <div className="modal-box">
@@ -52,10 +42,7 @@ export default function Team(props) {
           <div className="stats shadow">
             <div className="stat px-3 md:px-10">
               <div className="stat-figure text-primary">
-                <FontAwesomeIcon
-                  icon={faChalkboardUser}
-                  className="text-3xl inline-block"
-                />
+                <FontAwesomeIcon icon={faChalkboardUser} className="text-3xl inline-block" />
               </div>
               <div className="stat-title">Total Workshop</div>
               <div className="stat-value text-primary">{member.perform}</div>
@@ -64,10 +51,7 @@ export default function Team(props) {
 
             <div className="stat px-3 md:px-10">
               <div className="stat-figure text-secondary">
-                <FontAwesomeIcon
-                  icon={faClock}
-                  className="text-3xl inline-block"
-                />
+                <FontAwesomeIcon icon={faClock} className="text-3xl inline-block" />
               </div>
               <div className="stat-title">Sharing Time</div>
               <div className="stat-value text-secondary">
@@ -82,5 +66,7 @@ export default function Team(props) {
         </form>
       </dialog>
     </div>
-  );
+  )
 }
+
+export default Team
