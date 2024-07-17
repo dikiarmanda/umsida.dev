@@ -1,75 +1,39 @@
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
-import Acordion from '../components/Acordion'
-// import TimelineHorizontal from '../components/TimelineHorizontal'
+import ROADMAP from "../assets/data/roadmap"
 
 const RoadmapSkripsi = () => {
-  const roadmap = [
-    {
-      title: 'Proposal',
-      body: [
-        'Template Proposal Skripsi download di fst.umsida.ac.id',
-        'Penulisan bab 1 - 3',
-        'Sitasi minimal 5 dengan sumber tidak lebih dari 5 tahun yang lalu.',
-      ],
-    },
-    {
-      title: 'Seminar Proposal',
-      body: [
-        'Cek Plagiasi Bab 1 - 3',
-        'Melampirkan 1x foto copy kwitansi pembayaran sebesar Rp. 200.000,- yang telah dibayarkan ke Bank BSI (wajib divalidasi ke Direktorat Keuangan kampus 1)',
-        'Soft copy bukti pendaftaran test atau sertifikat TOEFL dari UMSIDA (bayar Rp. 60.000 ke BSI kampus 1 untuk pendaftaran)',
-        'Menyerahkan 1x soft copy Point, minimal 75% sudah terpenuhi (Validasi Kemahasiswaan Fakultas)',
-        'Melampirkan transkrip sementara dari BAA Telah lulus 100 SKS (Bebas nilai D dan E, Nilai PKL dan KKN sudah muncul di transkrip)',
-        '[SAPUJAGAD] Bimbingan minimal 5x',
-        '[SAPUJAGAD] Daftar Seminar Proposal',
-      ],
-    },
-    {
-      title: 'Seminar Hasil',
-      body: [
-        'Cek plagiasi full',
-        '[SAPUJAGAD] Bimbingan 16x',
-        '[CETAK] Lembar pengesahan',
-        '[CETAK] Berita acara',
-        '[CETAK] Dokumen Bimbingan',
-      ],
-    },
-    {
-      title: 'Yudisium',
-      body: [
-        'Mengumpulkan berkas ke classroom',
-        '[SAPUJAGAD] Upload tanda terima pengumpulan classroom',
-        '[SAPUJAGAD] Validasi sudah upload Archive',
-        '[SAPUJAGAD] Validasi keuangan ke Direktorat Keuangan',
-        'Bayar yudisium Rp. 75.000 ke admin saintek',
-      ],
-    },
-    {
-      title: 'Wisuda',
-      body: [
-        'Aktivasi VA ke BAK untuk pembayaran wisuda',
-        '[U-PAY] Bayar biaya wisuda',
-        '[SAPUJAGAD] Isi formulir pendaftaran wisuda',
-        '[CETAK] Formulir pendaftaran wisuda',
-        '[CETAK] Foto 3x4 2 lembar',
-      ],
-    }
-  ]
   return (
-    <div className="container mx-auto lg:max-w-7xl">
+    <div className="container">
       <Navbar />
-      <main className="pt-20">
+      <main className="mt-20 mx-auto lg:max-w-7xl">
         <h1 className="text-center text-3xl font-bold">Roadmap Skripsi</h1>
-        <p className="text-center text-secondary">update 27 Mei 2024</p>
-        {/* <div className="mx-auto">
-          <TimelineHorizontal />
-        </div> */}
-        <div className="mt-10 flex flex-col justify-center rounded-lg bg-gray-800 py-10">
-          {roadmap.map((item, index) => (
-            <Acordion key={index} step={item.title} body={item.body} />
+        <p className="text-center text-secondary">update 17 Juni 2024</p>
+        <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical mt-5">
+          {ROADMAP.map((item, index) => (
+            <li key={index}>
+              <div className="timeline-middle">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  className="h-5 w-5">
+                  <path
+                    fillRule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                    clipRule="evenodd" />
+                </svg>
+              </div>
+              <div className={index % 2 === 0 ? "timeline-start mb-10 md:text-end" : "timeline-end mb-10"}>
+                <div>
+                  <a href={"skripsi/" + item.slug} className="btn btn-secondary text-lg">{item.title}</a>
+                </div>
+                {item.description}
+              </div>
+              {index !== ROADMAP.length - 1 && <hr className="bg-primary"/>}
+            </li>
           ))}
-        </div>
+        </ul>
       </main>
       <Footer />
     </div>

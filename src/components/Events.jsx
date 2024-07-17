@@ -9,8 +9,8 @@ const Events = ({ compact = false }) => {
   newEvents = compact ? newEvents : EVENTS
 
   return (
-    <div className="bg-base-100 text-center px-10 py-20" id="events">
-      <h2 className="font-bold text-3xl">UMSIDA.dev&aposs; Events</h2>
+    <div className="bg-base-100 text-center px-10 py-20 md:max-w-7xl mx-auto" id="events">
+      <h2 className="font-bold text-3xl">Our Events</h2>
       <a href="/events" className="text-secondary ease-in-out duration-300 hover:text-primary hover:underline">
         view all events
       </a>

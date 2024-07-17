@@ -3,7 +3,7 @@ import TEAMS from "../assets/data/teams"
 
 const Teams = () => {
   return (
-    <div className="text-center" id="teams">
+    <div className="text-center md:max-w-7xl mx-auto" id="teams">
       <h2 className="font-bold text-3xl">Meet with Our Teams</h2>
       <div className="flex flex-wrap justify-center">
         {TEAMS.map((member, index) => (
