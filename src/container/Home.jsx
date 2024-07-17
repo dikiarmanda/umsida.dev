@@ -8,9 +8,9 @@ import Footer from "../components/Footer"
 
 const Home = () => {
   return (
-    <div className="container lg:max-w-7xl mx-auto">
+    <div className="container">
       <Navbar />
-      <main>
+      <main className="md:max-w-7xl lg:max-w-screen-2xl mx-auto">
         <Hero />
         <About />
         <Events compact={true} />

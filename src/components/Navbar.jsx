@@ -32,9 +32,6 @@ const Navbar = () => {
               <a href="/#about">About</a>
             </li>
             <li>
-              <a href="/roadmap-skripsi">Roadmap Skripsi</a>
-            </li>
-            <li>
               <a href="/Event">Event</a>
               <ul className="p-2">
                 <li>
@@ -49,6 +46,9 @@ const Navbar = () => {
               <a href="/#teams">Teams</a>
             </li>
             <li>
+              <a href="/roadmap-skripsi">Roadmap Skripsi</a>
+            </li>
+            <li>
               <a href="/#contact">Contact</a>
             </li>
           </ul>
@@ -59,9 +59,6 @@ const Navbar = () => {
         <ul className="menu menu-horizontal px-1">
           <li>
             <a href="/#about">About</a>
-          </li>
-          <li>
-            <a href="/roadmap-skripsi">Roadmap Skripsi</a>
           </li>
           <li>
             <details>
@@ -78,6 +75,9 @@ const Navbar = () => {
           </li>
           <li>
             <a href="/#teams">Teams</a>
+          </li>
+          <li>
+            <a href="/roadmap-skripsi">Roadmap Skripsi</a>
           </li>
           <li>
             <a href="/#contact">Contact</a>
